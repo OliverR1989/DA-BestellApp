@@ -2,25 +2,20 @@
     width: 720px;
     height: 150px;
 
+    display: flex;
+
 
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 120px;
 
+    padding: 16px;
+
     background-color: rgba(253, 234, 220, 1);
     border-radius: 16px;
 }
 
-.menu-card-wrapper {
-    width: 100%;
-    height: auto;
-
-    display: flex;
-
-    padding: 12px; 
-}
-
-.menu-card-wrapper img {
+.menu-card img {
     width: 210px;
     height: 120px;
 }

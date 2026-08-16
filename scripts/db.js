@@ -1,4 +1,4 @@
-let menuData = [
+const menuData = [
     {
         id: 0,
         category: "Burger",

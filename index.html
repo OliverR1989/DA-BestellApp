@@ -7,8 +7,9 @@
     <title>BestellApp</title>
     <link href="style.css" rel="stylesheet">
     <link href="./styles/basket.css" rel="stylesheet">
-     <link href="./styles/components.css" rel="stylesheet">
+    <link href="./styles/components.css" rel="stylesheet">
     <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
 </head>
 
 <body onload="init()">
@@ -43,73 +44,11 @@
         <div class="main-wrapper">
             <section class="menu">
                 <div class="menu-wrapper">
-                    <div class="menu-burger">
-                        <div class="menu-category">
-                            <div class="menu-category-headline">
-                                <img src="./assets/icons/main-category-burger.png" alt="burger">
-                                <h2>Burger & Sandwiches</h2>
-                            </div>
-                        </div>
-                        <div class="menu-card">
-                            <div class="menu-card-wrapper">
-                                <img src="#" alt="menu">
-                                <div class="menu-card-information">
-                                    <div class="menu-card-headline">
-                                        <p>Veggie mushroom black burger</p>
-                                        <p>Mixed green salad, Tomatoes, Edamame, Mushrooms</p>
-                                    </div>
-                                    <div class="menu-card-underline">
-                                        <p>16,90€</p>
-                                        <button class="menu-card-button">Add to basket</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-pizza">
-                        <div class="menu-category">
-                            <div class="menu-category-headline">
-                                <img src="./assets/icons/main-category-pizza.png" alt="pizza">
-                                <h2>Pizza (30cm)</h2>
-                            </div>
-                        </div>
-                        <div class="menu-card">
-
-                        </div>
-                    </div>
-                    <div class="menu-salad">
-                        <div class="menu-category">
-                            <div class="menu-category-headline">
-                                <img src="./assets/icons/main-category-salad.png" alt="salad">
-                                <h2>Salad</h2>
-                            </div>
-                        </div>
-                        <div class="menu-card">
-
-                        </div>
+                    <div id="menuCard">
                     </div>
                 </div>
             </section>
-            <section class="basket">
-                <div class="basket-wrapper">
-                    <p class="basket-headline">Your Basket</p>
-                    <div class="basket-items">
-
-                    </div>
-                    <div class="basket-subtotal">
-                        <p>Subtotal</p>
-                        <p id="basket-subtotal"></p>
-                    </div>
-                    <div class="basket-delivery-fee">
-                        <p>Delivery fee</p>
-                        <p id="basket-delivery-fee"></p>
-                    </div>
-                    <div class="basket-total">
-                        <p>Total</p>
-                        <p id="basket-total"></p>
-                    </div>
-                    <button class="basket-buy-button">Buy Now (<p id="basket-total-button"></p>)</button>
-                </div>
+            <section class="basket" id="basket">
             </section>
         </div>
     </main>
