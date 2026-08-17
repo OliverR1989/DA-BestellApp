@@ -1,13 +1,16 @@
 function renderMenuCard() {
     let menuCardRef = document.getElementById("menuCard");
-    menuData.forEach(menu => {
-        menuCardRef.innerHTML += getMenuCardTemplate();
-    });
+    for (let index = 0; index < menuData.length; index++) {
+        menuCardRef.innerHTML += getMenuCardTemplate(index);
+    }
 }
+
 function renderBasket() {
     let basketRef = document.getElementById("basket");
     if(basket.length === 0) {
-        basketRef.innerHTML = getEmptyBasket();
+        basketRef.innerHTML = getEmptyBasketTemplate();
+    } else {
+        basketRef.innerHTML = getBasketTemplate();
     }
 }
 
