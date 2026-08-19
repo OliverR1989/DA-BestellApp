@@ -99,7 +99,7 @@ const menuData = [
 
 const deliveryFee = 4.99
 
-let basket = []
+let basket = [1]
 
 let basketSubtotal = []
 

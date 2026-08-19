@@ -45,7 +45,7 @@ function getBasketTemplate() {
                         <p>Total</p>
                         <p id="basket-total"></p>
                     </div>
-                    <button class="basket-buy-button">Buy Now (<p id="basket-total-button"></p>)</button>
+                    <button class="basket-buy-button" onclick="openOrderConfirmed()">Buy Now (<p id="basket-total-button"></p>)</button>
                 </div>
 `}
 

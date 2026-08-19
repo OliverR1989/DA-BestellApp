@@ -40,7 +40,7 @@
             </div>
         </div>
     </section>
-    <main>
+    <main id="main">
         <div class="main-wrapper">
             <section class="menu">
                 <div class="menu-wrapper">
@@ -62,6 +62,28 @@
             <p>Cookie Preferences</p>
         </div>
     </footer>
+    <section class="sticky-footbar">
+        <div class="sticky-footbar-wrapper">
+            <img src="./assets/icons/sticky-footbar/home-default.png" alt="home">
+            <img src="./assets/icons/sticky-footbar/profil-default.png" alt="profil">
+            <img src="./assets/icons/sticky-footbar/order-default.png" alt="order">
+            <div class="sticky-footbar-basket">
+                <div class="sticky-footbar-basket-amount-hidden" id="sticky-footbar-basket-counter">
+                    <div class="sticky-footbar-amount-hidden" id="sticky-footbar-amount">
+                        <p id="sticky-footbar-basket-amount"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <dialog class="order-confirmed" id="order-confirmed">
+        <button class="close-confirmed-dialog" onclick="closeOrderConfirmed()">X</button>
+        <section>
+            <img src="./assets/icons/delivercar.png" alt="delivery-car">
+            <h2>Order confirmed!</h2>
+            <h3>Your food is on the way!</h3>
+        </section>
+    </dialog>
     <script src="script.js"></script>
 </body>
 
