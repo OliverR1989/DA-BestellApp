@@ -51,6 +51,14 @@
             <section class="basket" id="basket">
             </section>
         </div>
+        <dialog class="order-confirmed-hidden" id="order-confirmed">
+            <button class="close-confirmed-dialog" onclick="closeOrderConfirmed()">X</button>
+            <section>
+                <img src="./assets/icons/delivercar.png" alt="delivery-car">
+                <h2>Order confirmed!</h2>
+                <h3>Your food is on the way!</h3>
+            </section>
+        </dialog>
     </main>
     <footer>
         <div class="footer-wrapper">
@@ -76,14 +84,7 @@
             </div>
         </div>
     </section>
-    <dialog class="order-confirmed" id="order-confirmed">
-        <button class="close-confirmed-dialog" onclick="closeOrderConfirmed()">X</button>
-        <section>
-            <img src="./assets/icons/delivercar.png" alt="delivery-car">
-            <h2>Order confirmed!</h2>
-            <h3>Your food is on the way!</h3>
-        </section>
-    </dialog>
+
     <script src="script.js"></script>
 </body>
 

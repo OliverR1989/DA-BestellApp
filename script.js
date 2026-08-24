@@ -11,6 +11,15 @@ function renderBasket() {
         basketRef.innerHTML = getEmptyBasketTemplate();
     } else {
         basketRef.innerHTML = getBasketTemplate();
+        renderDeliveryFee();
+    }
+}
+
+function renderBasketItemCard() {
+    let basketItemRef = document.getElementById("basketItems")
+
+    for (let index = 0; index < basket.length; index++) {
+        basketItemRef.innerHTML += getBasketMenuCardTemplate(index);
     }
 }
 
@@ -28,21 +37,32 @@ function renderStickyBasket() {
         document.getElementById("sticky-footbar-amount").classList.add("sticky-footbar-amount");
         document.getElementById("sticky-footbar-basket-counter").classList.add("sticky-footbar-basket-amount");
         document.getElementById("sticky-footbar-basket-amount").innerText = basket.length;
+    } else {
+        document.getElementById("sticky-footbar-amount").classList.remove("sticky-footbar-amount");
+        document.getElementById("sticky-footbar-basket-counter").classList.remove("sticky-footbar-basket-amount");
     }
 }
 
 function openOrderConfirmed() {
     document.getElementById("order-confirmed").showModal();
+    document.getElementById("order-confirmed").classList.add("order-confirmed");
     setTimeout(closeOrderConfirmed, 2500);
 }
 
 function closeOrderConfirmed() {
     document.getElementById("order-confirmed").close();
+    document.getElementById("order-confirmed").classList.remove("order-confirmed");
+
+    const basket = [];
+
+    console.log(basket);
+
+    renderBasket();
+    renderStickyBasket();
 }
 
 function init() {
     renderBasket();
-    console.log(basket.length);
     renderMenuCard();
     renderStickyBasket();
 }

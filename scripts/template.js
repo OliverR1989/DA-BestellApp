@@ -8,7 +8,7 @@ function getMenuCardTemplate(index) {
                     </div>
                     <div class="menu-card-underline">
                         <p>${menuData[index].price}</p>
-                        <button class="menu-card-button" id=${menuData[index].id}>Add to basket</button>
+                        <button class="menu-card-button" onclick="addToBasket()" id=${menuData[index].id}>Add to basket</button>
                     </div>
                 </div>
             <div>    
@@ -17,21 +17,8 @@ function getMenuCardTemplate(index) {
 function getBasketTemplate() {
     return `<div class="basket-wrapper">
                     <p class="basket-headline">Your Basket</p>
-                    <div class="basket-items">
-                      <div class="basket-menu-card">
-                    <div class="basket-menu-card-headline">
-                        <p>Menu Name</p>
-                        <img src="#" alt="basket-trash-all">
+                    <div class="basket-items" id="basketItems">
                     </div>
-                    <div class="basket-menu-card-underline">
-                        <div class="basket-menu-card-buttons">
-                            <button id="basket-menu-card-minus">-</button>
-                            <p id="basket-menu-card-amount">Menge</p>
-                            <button id="basket-menu-card-plus">+</button>
-                        </div>
-                        <p id="basket-menu-card-price">Price</p>
-                    </div>
-                </div>
                     </div>
                     <div class="basket-subtotal">
                         <p>Subtotal</p>
@@ -49,6 +36,23 @@ function getBasketTemplate() {
                 </div>
 `}
 
+function getBasketMenuCardTemplate(index) {
+    return `  <div class="basket-menu-card">
+                    <div class="basket-menu-card-headline">
+                        <p>${basket[index].name}</p>
+                        <img src="#" alt="basket-trash-all">
+                    </div>
+                    <div class="basket-menu-card-underline">
+                        <div class="basket-menu-card-buttons">
+                            <button id="basket-menu-card-minus">-</button>
+                            <p id="basket-menu-card-amount">Menge</p>
+                            <button id="basket-menu-card-plus">+</button>
+                        </div>
+                        <p id="basket-menu-card-price">${basket[index].price}</p>
+                    </div>
+                </div>
+`}
+
 function getEmptyBasketTemplate() {
     return `<div class="basket-wrapper">
                 <p class="basket-headline">Your Basket</p>
@@ -60,21 +64,4 @@ function getEmptyBasketTemplate() {
                     <img src="./assets/icons/basket-empty.png" alt="basket">
                 </div>
             </div>
-`}
-
-function getBasketMenuCardTemplate() {
-    return `  <div class="basket-menu-card">
-                    <div class="basket-menu-card-headline">
-                        <p>Menu Name</p>
-                        <img src="#" alt="basket-trash-all">
-                    </div>
-                    <div class="basket-menu-card-underline">
-                        <div class="basket-menu-card-buttons">
-                            <button id="basket-menu-card-minus">-</button>
-                            <p id="basket-menu-card-amount">Menge</p>
-                            <button id="basket-menu-card-plus">+</button>
-                        </div>
-                        <p id="basket-menu-card-price">Price</p>
-                    </div>
-                </div>
 `}

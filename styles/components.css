@@ -147,6 +147,10 @@
     right: 0;
 }
 
+.order-confirmed-hidden {
+    display: none;
+}
+
 .order-confirmed {
     width: 420px;
     height: 270px;
