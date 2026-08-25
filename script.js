@@ -11,8 +11,38 @@ function renderBasket() {
         basketRef.innerHTML = getEmptyBasketTemplate();
     } else {
         basketRef.innerHTML = getBasketTemplate();
+        renderBasketItemCard();
         renderDeliveryFee();
     }
+}
+
+function addToBasket(menuID) {
+    const searchItem = menuData.find((menu) => menu.id === menuID)
+    const existingItem = basket.find((menu) => menu.id === menuID);
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        basket.push(searchItem);
+    }
+    renderBasket();
+    console.log(basket)
+}
+
+function minusButton(menuID) {
+    const existingItem = basket.find((menu) => menu.id === menuID);
+    const existingItemID = basket.findIndex((menuItemID) => menuItemID.id === menuID);
+    if (existingItem.quantity === 0) {
+        basket.splice(existingItemID, 1);
+    } else {
+        existingItem.quantity--;
+    }
+    renderBasket();
+}
+
+function plusButton(menuID) {
+    const existingItem = basket.find((menu) => menu.id === menuID);
+    existingItem.quantity++;
+    renderBasket();
 }
 
 function renderBasketItemCard() {

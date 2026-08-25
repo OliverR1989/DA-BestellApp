@@ -5,6 +5,7 @@ const menuData = [
         name: "Veggie mushroom black burger",
         ingredients: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         price: 16.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -13,6 +14,7 @@ const menuData = [
         name: "All meat burger",
         ingredients: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
         price: 15.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -21,6 +23,7 @@ const menuData = [
         name: "Beef red burger",
         ingredients: "Beef, Cheese, Tomatoes, Lettuce, Onion",
         price: 14.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -29,6 +32,7 @@ const menuData = [
         name: "Big chicken burger",
         ingredients: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
         price: 15.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -37,6 +41,7 @@ const menuData = [
         name: "Pizza Margherita",
         ingredients: "Tomato Sauce, Mozzarella",
         price: 11.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -45,6 +50,7 @@ const menuData = [
         name: "Pizza Chorizo",
         ingredients: "Tomato slices, Mozzarella, Chorizo",
         price: 13.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -53,6 +59,7 @@ const menuData = [
         name: "Funghi",
         ingredients: "Red onion, Olives, Button Mushrooms, Mozzarella",
         price: 12.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -61,6 +68,7 @@ const menuData = [
         name: "Quattro Formaggi with Chicken",
         ingredients: "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
         price: 15.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -69,6 +77,7 @@ const menuData = [
         name: "Warm beef arugula salad",
         ingredients: "TBeef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
         price: 11.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -77,6 +86,7 @@ const menuData = [
         name: "Mini green Salad",
         ingredients: "Green salad, Cucumber, Carrots, Parsley, Radishes",
         price: 13.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -85,6 +95,7 @@ const menuData = [
         name: "Green Salad with sea food",
         ingredients: "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
         price: 12.90,
+        quantity: 0,
         img: "",
     },
     {
@@ -93,6 +104,7 @@ const menuData = [
         name: "Vegan green salad with tofu",
         ingredients: "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
         price: 15.90,
+        quantity: 0,
         img: "",
     },
 ]

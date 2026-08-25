@@ -8,7 +8,7 @@ function getMenuCardTemplate(index) {
                     </div>
                     <div class="menu-card-underline">
                         <p>${menuData[index].price}</p>
-                        <button class="menu-card-button" onclick="addToBasket()" id=${menuData[index].id}>Add to basket</button>
+                        <button class="menu-card-button" onclick="addToBasket(${menuData[index].id})">Add to basket</button>
                     </div>
                 </div>
             <div>    
@@ -44,9 +44,9 @@ function getBasketMenuCardTemplate(index) {
                     </div>
                     <div class="basket-menu-card-underline">
                         <div class="basket-menu-card-buttons">
-                            <button id="basket-menu-card-minus">-</button>
-                            <p id="basket-menu-card-amount">Menge</p>
-                            <button id="basket-menu-card-plus">+</button>
+                            <button id="basket-menu-card-minus" onclick="minusButton(${basket[index].id})">-</button>
+                            <p id="basket-menu-card-amount">${basket[index].quantity + 1}</p>
+                            <button id="basket-menu-card-plus" onclick="plusButton(${basket[index].id})">+</button>
                         </div>
                         <p id="basket-menu-card-price">${basket[index].price}</p>
                     </div>
