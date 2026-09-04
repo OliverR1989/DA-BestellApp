@@ -7,8 +7,8 @@ function getMenuCardTemplate(index) {
                         <p>${menuData[index].ingredients}</p>
                     </div>
                     <div class="menu-card-underline">
-                        <p>${menuData[index].price}</p>
-                        <button class="menu-card-button" onclick="addToBasket(${menuData[index].id})">Add to basket</button>
+                        <p>${euroFormat.format(menuData[index].price)}</p>
+                        <button class="menu-card-button" id="addToBasket" onclick="addToBasket(${menuData[index].id})">Add to basket</button>
                     </div>
                 </div>
             <div>    
@@ -40,15 +40,16 @@ function getBasketMenuCardTemplate(index) {
     return `  <div class="basket-menu-card">
                     <div class="basket-menu-card-headline">
                         <p>${basket[index].name}</p>
-                        <img src="#" alt="basket-trash-all">
+                        <button class="trash-all-button" onclick="trashButton(${basket[index].id})">
+                        </button>
                     </div>
                     <div class="basket-menu-card-underline">
                         <div class="basket-menu-card-buttons">
                             <button id="basket-menu-card-minus" onclick="minusButton(${basket[index].id})">-</button>
-                            <p id="basket-menu-card-amount">${basket[index].quantity + 1}</p>
+                            <p id="basket-menu-card-amount">${basket[index].quantity}</p>
                             <button id="basket-menu-card-plus" onclick="plusButton(${basket[index].id})">+</button>
                         </div>
-                        <p id="basket-menu-card-price">${basket[index].price}</p>
+                        <p id="basket-menu-card-price">${euroFormat.format(basket[index].price)}</p>
                     </div>
                 </div>
 `}

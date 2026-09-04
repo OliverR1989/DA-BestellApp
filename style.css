@@ -51,6 +51,7 @@ nav {
 }
 
 .hero-background {
+    position: relative;
     width: 100%;
     height: 440px;
 
@@ -58,6 +59,11 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-logo-wrapper {
+    position: absolute;
+    bottom: 500px;
 }
 
 .hero-logo {
@@ -122,6 +128,8 @@ main {
 
     display: flex;
     justify-content: center;
+
+    padding-top: 200px;
 }
 
 .menu {

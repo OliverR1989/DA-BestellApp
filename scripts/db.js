@@ -109,10 +109,15 @@ const menuData = [
     },
 ]
 
+const euroFormat = new Intl.NumberFormat('de-DE', {
+  style: 'currency',
+  currency: 'EUR'
+});
+
 const deliveryFee = 4.99
 
 const basket = []
 
-let basketSubtotal = []
+let basketSubtotal = 0 
 
-let basketTotal = deliveryFee + basketSubtotal
+let basketTotal = 0

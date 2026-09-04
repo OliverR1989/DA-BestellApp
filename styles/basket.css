@@ -90,6 +90,40 @@
     cursor: pointer;
 }
 
+.minus-button {
+    background-image: url(../assets/icons/trash-button-default.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 30px;
+}
+
+.trash-all-button {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../assets/icons/trash-button-default.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.trash-all-button:hover {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../assets/icons/trash-button-press.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .basket-subtotal {
     width: 100%;
     height: 25px;
