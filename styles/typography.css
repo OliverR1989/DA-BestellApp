@@ -1,0 +1,216 @@
+/* palanquin-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../assets/fonts/palanquin-v17-latin-100.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../assets/fonts/palanquin-v17-latin-200.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../assets/fonts/palanquin-v17-latin-300.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/palanquin-v17-latin-regular.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../assets/fonts/palanquin-v17-latin-500.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../assets/fonts/palanquin-v17-latin-600.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/fonts/palanquin-v17-latin-700.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-dark-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/palanquin-dark-v17-latin-regular.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-dark-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../assets/fonts/palanquin-dark-v17-latin-500.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-dark-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../assets/fonts/palanquin-dark-v17-latin-600.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-dark-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/fonts/palanquin-dark-v17-latin-700.woff2) format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+h1 {
+    font-family: 'Palanquin Dark';
+    font-size: 48px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+h1 span {
+    color: rgba(231, 108, 31, 1);
+}
+
+.hero-headline-rating-text {
+    font-family: 'Palanquin';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-underline-text {
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.menu-card-headline-title {
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-card-headline-subtitle {
+    font-family: 'Palanquin';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-card-underline-price {
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menu-card-button {
+    font-family: 'Palanquin';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.basket-menu-title {
+    font-family: 'Palanquin';
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.basket-headline {
+    font-family: 'Palanquin';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket-empty-text {
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.basket-subtotal {
+    font-family: 'Palanquin';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basket-delivery-fee {
+    font-family: 'Palanquin';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basket-total {
+    font-family: 'Palanquin';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basket-buy-button {
+    font-family: 'Palanquin';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer-wrapper {
+      font-family: 'Palanquin';
+    font-size: 18px;
+    font-weight: 400;
+}

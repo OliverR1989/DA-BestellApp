@@ -6,7 +6,7 @@ const menuData = [
         ingredients: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         price: 16.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/burger-0.jpg",
     },
     {
         id: 1,
@@ -15,7 +15,7 @@ const menuData = [
         ingredients: "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
         price: 15.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/burger-1.jpg",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const menuData = [
         ingredients: "Beef, Cheese, Tomatoes, Lettuce, Onion",
         price: 14.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/burger-2.jpg",
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const menuData = [
         ingredients: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
         price: 15.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/burger-3.jpg",
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const menuData = [
         ingredients: "Tomato Sauce, Mozzarella",
         price: 11.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/pizza-0.jpg",
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const menuData = [
         ingredients: "Tomato slices, Mozzarella, Chorizo",
         price: 13.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/pizza-1.jpg",
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ const menuData = [
         ingredients: "Red onion, Olives, Button Mushrooms, Mozzarella",
         price: 12.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/pizza-2.jpg",
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ const menuData = [
         ingredients: "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
         price: 15.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/pizza-3.jpg",
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ const menuData = [
         ingredients: "TBeef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
         price: 11.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/salad-0.jpg",
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const menuData = [
         ingredients: "Green salad, Cucumber, Carrots, Parsley, Radishes",
         price: 13.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/salad-1.jpg",
     },
     {
         id: 10,
@@ -96,7 +96,7 @@ const menuData = [
         ingredients: "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
         price: 12.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/salad-2.jpg",
     },
     {
         id: 11,
@@ -105,7 +105,7 @@ const menuData = [
         ingredients: "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
         price: 15.90,
         quantity: 0,
-        img: "",
+        img: "./assets/imgs/menu/salad-3.jpg",
     },
 ]
 

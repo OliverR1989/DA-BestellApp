@@ -1,13 +1,13 @@
 function getMenuCardTemplate(index) {
     return `<div class="menu-card">
-                <img src="#" alt="menu">
+                <img src="${menuData[index].img}" alt="menu">
                 <div class="menu-card-information">
                     <div class="menu-card-headline">
-                        <p>${menuData[index].name}</p>
-                        <p>${menuData[index].ingredients}</p>
+                        <p class="menu-card-headline-title">${menuData[index].name}</p>
+                        <p class="menu-card-headline-subtitle">${menuData[index].ingredients}</p>
                     </div>
                     <div class="menu-card-underline">
-                        <p>${euroFormat.format(menuData[index].price)}</p>
+                        <p class="menu-card-underline-price">${euroFormat.format(menuData[index].price)}</p>
                         <button class="menu-card-button" id="addToBasket" onclick="addToBasket(${menuData[index].id})">Add to basket</button>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ function getBasketTemplate() {
 function getBasketMenuCardTemplate(index) {
     return `  <div class="basket-menu-card">
                     <div class="basket-menu-card-headline">
-                        <p>${basket[index].name}</p>
+                        <p class="basket-menu-title">${basket[index].name}</p>
                         <button class="trash-all-button" onclick="trashButton(${basket[index].id})">
                         </button>
                     </div>

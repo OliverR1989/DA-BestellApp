@@ -133,7 +133,7 @@ main {
 }
 
 .menu {
-    width: 100%;
+    width: calc(100% - 440px);
 }
 
 .menu-wrapper {
@@ -163,7 +163,14 @@ footer {
 
 .copyright-logo {
     display: flex;
+    align-items: center;
+    text-align: center;
     gap: 10px;
 
     color: rgba(255, 255, 255, 1);
+}
+
+.copyright-logo img {
+    width: 24px;
+    height: 24px;
 }

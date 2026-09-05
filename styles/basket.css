@@ -6,6 +6,13 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 60px 65px 60px 30px;
+
     position: sticky;
     top: 0;
 }
@@ -18,8 +25,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-    padding: 60px 65px 60px 30px;
 }
 
 .basket-headline {
@@ -30,7 +35,11 @@
 
 .basket-items {
     width: 100%;
-    height: 400px;
+    height: 340px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
     overflow-y: scroll;
 }

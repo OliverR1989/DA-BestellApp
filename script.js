@@ -14,6 +14,8 @@ function renderBasket() {
         renderBasketItemCard();
         renderStickyBasket();
         renderDeliveryFee();
+        calculateSubtotal();
+        calculateBasketTotal();
     }
 }
 
@@ -27,7 +29,6 @@ function addToBasket(menuID) {
         basket.push(searchItem);
     }
     renderBasket();
-    calculateSubtotal();
 }
 
 function minusButton(menuID) {
@@ -39,21 +40,18 @@ function minusButton(menuID) {
         existingItem.quantity--;
     }
     renderBasket();
-    calculateSubtotal();
 }
 
 function trashButton(menuID) {
     const existingItemID = basket.findIndex((menuItemID) => menuItemID.id === menuID);
     basket.splice(existingItemID, 1);
     renderBasket();
-    calculateSubtotal();
 }
 
 function plusButton(menuID) {
     const existingItem = basket.find((menu) => menu.id === menuID);
     existingItem.quantity++;
     renderBasket();
-    calculateSubtotal();
 }
 
 function calculateSubtotal() {
@@ -64,8 +62,6 @@ function calculateSubtotal() {
         basketSubtotal += subtotal.quantity * subtotal.price;
     }
     document.getElementById("basket-subtotal").innerHTML = euroFormat.format(basketSubtotal);
-
-    calculateBasketTotal();
 }
 
 function calculateBasketTotal() {
@@ -87,10 +83,8 @@ function renderDeliveryFee() {
     document.getElementById("basket-delivery-fee").innerText = euroFormat.format(deliveryFee);
 }
 
-
-
 function renderStickyBasket() {
-    if (basket.length > 0) {
+    if (basket.length >= 1) {
         document.getElementById("sticky-footbar-amount").classList.add("sticky-footbar-amount");
         document.getElementById("sticky-footbar-basket-counter").classList.add("sticky-footbar-basket-amount");
         document.getElementById("sticky-footbar-basket-amount").innerText = basket.length;
@@ -109,7 +103,6 @@ function openOrderConfirmed() {
 function closeOrderConfirmed() {
     basket.length = 0;
     basketSubtotal = 0;
-    console.log(basket);
     document.getElementById("order-confirmed").close();
     document.getElementById("order-confirmed").classList.remove("order-confirmed");
 
