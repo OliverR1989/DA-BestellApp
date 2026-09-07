@@ -4,7 +4,6 @@
 
     display: flex;
 
-
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 120px;
@@ -26,6 +25,7 @@
 
 .menu-card-information {
     width: 100%;
+    padding-left: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -168,6 +168,11 @@
     border: none;
     border-radius: 30px;
     color: rgba(253, 234, 220, 1);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .order-confirmed::backdrop {

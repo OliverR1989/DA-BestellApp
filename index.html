@@ -9,6 +9,7 @@
     <link href="./styles/basket.css" rel="stylesheet">
     <link href="./styles/components.css" rel="stylesheet">
     <link href="./styles/typography.css" rel="stylesheet">
+    <link href="./styles/responsive.css" rel="stylesheet">
     <script src="./scripts/db.js"></script>
     <script src="./scripts/template.js"></script>
 </head>
@@ -18,7 +19,9 @@
         <nav>
             <div class="nav-wrapper">
                 <img src="./assets/icons/header-logo.png" alt="logo">
-                <img src="./assets/icons/header-burger-menu.png" alt="burger-menu">
+                <div class="nav-burger-menu">
+                    <img src="./assets/icons/header-burger-menu.png" alt="burger-menu">
+                </div>
             </div>
         </nav>
     </header>
@@ -46,9 +49,7 @@
     <main id="main">
         <div class="main-wrapper">
             <section class="menu">
-                <div class="menu-wrapper">
-                    <div id="menuCard">
-                    </div>
+                <div class="menu-wrapper" id="menuCards">
                 </div>
             </section>
             <section class="basket" id="basket">
@@ -78,7 +79,7 @@
             <img src="./assets/icons/sticky-footbar/home-default.png" alt="home">
             <img src="./assets/icons/sticky-footbar/profil-default.png" alt="profil">
             <img src="./assets/icons/sticky-footbar/order-default.png" alt="order">
-            <div class="sticky-footbar-basket">
+            <div class="sticky-footbar-basket" onclick="openBasketSticky()">
                 <div class="sticky-footbar-basket-amount-hidden" id="sticky-footbar-basket-counter">
                     <div class="sticky-footbar-amount-hidden" id="sticky-footbar-amount">
                         <p id="sticky-footbar-basket-amount"></p>
