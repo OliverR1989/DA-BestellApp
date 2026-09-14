@@ -1,5 +1,6 @@
 .menu-card {
-    width: 720px;
+    width: auto;
+    max-width: 720px;
     height: 150px;
 
     display: flex;
@@ -64,6 +65,7 @@
 }
 
 .sticky-footbar {
+    display: none;
     width: 100%;
     height: 80px;
 

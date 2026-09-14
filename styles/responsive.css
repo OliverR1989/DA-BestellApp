@@ -20,12 +20,14 @@
     }
 
     .hero-logo-wrapper {
-        bottom: 850px;
+        bottom: calc(100% - 780px);
     }
+
     .hero-logo img {
         width: 120px;
         height: 120px;
     }
+
     .hero-headline {
         flex-direction: column-reverse;
     }
@@ -77,10 +79,13 @@
     }
 
     .basket-hidden {
+        transform: translateY(100%);
         display: none;
     }
 
     .basket {
+        transition: transform 0.5s ease-out, visibility 0.5s;
+        transform: translateY(0);
         width: 100%;
         height: 665px;
 
@@ -95,6 +100,10 @@
 
     .footer-wrapper {
         flex-direction: column;
+    }
+
+    .sticky-footbar {
+        display: flex;
     }
 }
 
@@ -116,12 +125,14 @@
     }
 
     .hero-logo-wrapper {
-        bottom: 850px;
+        bottom: calc(100% - 780px);
     }
+
     .hero-logo img {
         width: 180px;
         height: 180px;
     }
+
     .hero-headline {
         flex-direction: column-reverse;
     }
@@ -129,6 +140,10 @@
     .hero-underline {
         align-items: normal;
         text-align: center;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
     }
 
     .menu {
@@ -168,19 +183,51 @@
         flex-direction: row;
     }
 
-    .basket {
+    .basket-hidden {
         display: none;
+    }
+
+    .basket {
+        width: 100%;
+        height: 665px;
+
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+
+        padding: 35px 20px 40px 20px;
+
+        z-index: 99;
+        bottom: 80px;
     }
 
     .footer-wrapper {
         flex-direction: column;
     }
+
+    .sticky-footbar {
+        display: flex;
+    }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
     .hero-logo-wrapper {
-        bottom: 850px;
+       bottom: calc(100% - 780px);
     }
+
+    .menu-card {
+        margin-left: 50px;
+    }
+
+    .menu-card img {
+        width: 80px;
+        height: 80px;
+        align-self: center;
+    }
+
+    .menu-card-headline-title {
+        font-size: 18px;
+    }
+
     .sticky-footbar {
         display: none;
     }

@@ -3,7 +3,7 @@ function getMenuCardTemplate(index) {
                 <img src="${menuData[index].img}" alt="menu">
                 <div class="menu-card-information">
                     <div class="menu-card-headline" id="${menuData[index].id}">
-                        <p class="menu-card-headline-title" >${menuData[index].name}"</p>
+                        <p class="menu-card-headline-title" >${menuData[index].name}</p>
                         <p class="menu-card-headline-subtitle">${menuData[index].ingredients}</p>
                     </div>
                     <div class="menu-card-underline">

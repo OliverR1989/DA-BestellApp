@@ -41,8 +41,30 @@
     flex-direction: column;
     gap: 10px;
 
+    padding-right: 8px;
+
     overflow-y: scroll;
 }
+
+.basket-items::-webkit-scrollbar {
+    width: 8px;
+}
+
+.basket-items::-webkit-scrollbar-track {
+    background: rgba(54, 53, 52, 1);
+    border-radius: 10px;
+}
+
+.basket-items::-webkit-scrollbar-thumb {
+    background: rgba(253, 234, 220, 1);
+    border-radius: 10px;
+}
+
+.basket-items::-webkit-scrollbar-thumb:hover {
+    background: rgba(231, 108, 31, 1);
+}
+
+
 
 .basket-menu-card {
     width: 100%;
